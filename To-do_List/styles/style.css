@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0087cc;
+  padding: 10px;
+}
+.todo-list {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: #dfe3e6;
+  margin-top: 15px;
+}
+input {
+  flex: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  background: transparent;
+}
+button {
+  background-color: #0087cc;
+  border: none;
+  padding-left: 13px;
+  padding-right: 13px;
+  color: #fff;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  margin: 20px 8px 10px 50px;
+  position: relative;
+  cursor: pointer;
+  word-wrap: break-word; /*These propertie allow long words to be broken and wrap onto the next line.*/
+}
+ul li::before {
+  content: "";
+  background-image: url(/images/uncheck.png);
+  height: 28px;
+  width: 28px;
+  background-size: cover;
+  background-position: center;
+  top: -5px;
+  left: -35px;
+  position: absolute;
+}
+ul li.checked {
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(/images/check.png);
+}
+ul li span {
+  font-size: 25px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  line-height: 15px;
+  padding: 5px;
+}
+ul li span:hover {
+  background-color: #dfe3e6;
+}
