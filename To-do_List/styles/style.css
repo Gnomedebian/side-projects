@@ -48,7 +48,7 @@ ul li {
 }
 ul li::before {
   content: "";
-  background-image: url(/images/uncheck.png);
+  background-image: url(../images/uncheck.png);
   height: 28px;
   width: 28px;
   background-size: cover;
@@ -61,7 +61,7 @@ ul li.checked {
   text-decoration: line-through;
 }
 ul li.checked::before {
-  background-image: url(/images/check.png);
+  background-image: url(../images/check.png);
 }
 ul li span {
   font-size: 25px;
