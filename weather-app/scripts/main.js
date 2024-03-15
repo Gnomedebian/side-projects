@@ -1,6 +1,6 @@
 const txtBox = document.getElementById("txt-box");
 const searchBtn = document.querySelector(".input-box button");
-const apiKey = "907b6bba4c828769ded80aab78dc6dd6";
+const apiKey = "apiKey";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
