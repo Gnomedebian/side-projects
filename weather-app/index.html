@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/icon.png" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <h1 class="title">A simple weather web app</h1>
+        <h3 class="api-tagg">Based on OpenWeatherAPI</h3>
+        <div class="input-box">
+          <input
+            id="txt-box"
+            autocomplete="off"
+            type="text"
+            placeholder="(e.g. Agadir)"
+          />
+          <button onclick="executeFunc()">search</button>
+          <p class="error-404">
+            City not found. Please enter a valid city name.
+          </p>
+          <p class="empty-field">
+            Empty field. Please enter a valid city name.
+          </p>
+        </div>
+        <div class="weather-dash">
+          <div class="place">
+            <p class="city">Agadir, MA</p>
+            <p class="temp">0ºC</p>
+          </div>
+          <div class="infos">
+            <p id="item-1">pressure:</p>
+            <p id="item-2">wind:</p>
+            <p id="item-3">humidity:</p>
+          </div>
+          <div class="api-value">
+            <p id="value-1">mb</p>
+            <p id="value-2">km/h</p>
+            <p id="value-3">%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
