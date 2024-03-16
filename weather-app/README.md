@@ -5,9 +5,9 @@ This is my first JavaScript project where I practiced DOM manipulation, API inte
 ## Appendix
 
 Put your API Key on scripts file.
-
+### e.g.
 ```
-const apiKey = {"apiKey"};
+const apiKey = {"123abc456dd789qwe0rtyuiopasd1"};
 ```
 
 ## Authors
